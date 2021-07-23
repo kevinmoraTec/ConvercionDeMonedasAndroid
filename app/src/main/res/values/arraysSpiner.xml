@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="todasMonedas"></string-array>
+    <item name="DOLAR" type="string"></item>
+    <item name="EURO" type="string"></item>
+    <item name="PESO_Colombiano" type="string"></item>
+</resources>

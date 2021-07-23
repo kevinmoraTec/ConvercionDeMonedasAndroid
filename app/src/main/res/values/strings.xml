@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Numero al azar</string>
+    <string name="verdadero">El numero fue Parecido </string>
+    <string name="start">Comvertir</string>
+    <string name="nombre">Ingresa Cantidad</string>
+    <string name="inicio">Bienvenido! Ingresa un Numero</string>
+
+</resources>
