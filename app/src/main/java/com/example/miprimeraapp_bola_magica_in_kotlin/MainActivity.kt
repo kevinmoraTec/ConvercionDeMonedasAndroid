@@ -10,23 +10,26 @@ import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
-    val listaTiposMonedas = resources.getStringArray(R.array.todasMonedas)
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val primerSpiner: Spinner = findViewById(R.id.spinner)
+        val segundoSpiner: Spinner = findViewById<Spinner>(R.id.spinnerconvert)
+        val listaTiposMonedas = resources.getStringArray(R.array.todasMonedas)
 
-        var primerSpiner: Spinner = findViewById(R.id.spinner)
-        var segundoSpiner: Spinner = findViewById(R.id.spinnerconvert)
+        //val listaTiposMonedas = listOf<String>("hola","Nombre","Apellido","Edad")
 
         val adaptador = ArrayAdapter(this,android.R.layout.simple_spinner_item,listaTiposMonedas)
 
         primerSpiner.adapter=adaptador
         segundoSpiner.adapter=adaptador
 
-        primerSpiner.onItemClickListener=object:
-        AdapterView.OnItemClickListener{
-            override fun onItemClick(
+
+        primerSpiner.onItemSelectedListener=object:
+        AdapterView.OnItemSelectedListener{
+            override fun onItemSelected(
                 parent: AdapterView<*>?,
                 view: View?,
                 position: Int,
@@ -35,19 +38,13 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this@MainActivity,listaTiposMonedas[position],Toast.LENGTH_LONG).show()
             }
 
-        }
-        segundoSpiner.onItemClickListener=object:
-            AdapterView.OnItemClickListener{
-            override fun onItemClick(
-                parent: AdapterView<*>?,
-                view: View?,
-                position: Int,
-                id: Long
-            ) {
+            override fun onNothingSelected(parent: AdapterView<*>?) {
                 TODO("Not yet implemented")
             }
 
+
         }
+
 
 
     }

@@ -5,4 +5,9 @@
     <string name="nombre">Ingresa Cantidad</string>
     <string name="inicio">Bienvenido! Ingresa un Numero</string>
 
+    <string-array name="todasMonedas">
+        <item>DOLAR</item>
+        <item>EURO</item>
+        <item>PESO COLOMBIANO</item>
+    </string-array>
 </resources>
