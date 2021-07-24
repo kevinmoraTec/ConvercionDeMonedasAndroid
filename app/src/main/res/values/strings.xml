@@ -4,10 +4,11 @@
     <string name="start">Comvertir</string>
     <string name="nombre">Ingresa Cantidad</string>
     <string name="inicio">Bienvenido! Ingresa un Numero</string>
+    <string name="titulo2">Ingresa Tu Peso Real</string>
 
     <string-array name="todasMonedas">
-        <item>DOLAR</item>
-        <item>EURO</item>
-        <item>PESO COLOMBIANO</item>
+        <item>TIERRA</item>
+        <item>JUPITER</item>
+        <item>VENUS</item>
     </string-array>
 </resources>
